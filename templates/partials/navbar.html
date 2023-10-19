@@ -1,0 +1,59 @@
+{% load static %}
+<header class="header header--loggedIn">
+  <div class="container">
+    <a href="{% url 'home' %}" class="header__logo">
+      <img src="{% static 'icons/logo.svg' %}" />
+      
+      <h1>StudyBuddy</h1>
+    </a>
+  
+    <form method="GET" action="{% url 'home' %}" class="header__search" >
+      <label>
+        {% include 'base/icons/search.html' %}
+        
+        <input type="text" name="query" placeholder="Search for study room" />
+      </label>
+    </form>
+
+    <nav class="header__menu">
+      {% if request.user.is_authenticated %}
+        <div class="header__user">
+          <a href="{% url 'user-profile' request.user.id %}">
+            <div class="avatar avatar--medium active">
+              <img src="{{ request.user.avatar.url }}" />
+            </div>
+            
+            <p>
+              {{ request.user.name }}<span>@{{ request.user.username }}</span>
+            </p>
+          </a>
+          
+          <button class="dropdown-button">
+            {% include 'base/icons/dropdown.html' %}
+          </button>
+        </div>
+    
+      {% else %}
+        <a href="{% url 'user-login' %}">
+          <img src="{% static 'icons/favicon.ico' %}" />
+          
+          <h3>Login</h3>
+        </a>
+      {% endif %}
+      
+      <div class="dropdown-menu">
+        <a href="{% url 'user-update-profile' %}" class="dropdown-link">
+          {% include 'base/icons/edit.html' %}
+          
+          Edit Profile
+        </a>
+      
+        <a href="{% url 'user-logout' %}" class="dropdown-link">
+          {% include 'base/icons/logout.html' %}
+          
+          Logout
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
