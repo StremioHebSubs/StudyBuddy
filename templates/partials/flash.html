@@ -1,0 +1,10 @@
+{% if messages %}
+  <div class="flash">
+    {% for message in messages %}
+    	<div class="flash--{{ message.tags }}">
+        {{ message }}
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
+
