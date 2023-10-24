@@ -1,4 +1,11 @@
+import os
+
 from pathlib import Path
+from dotenv import load_dotenv
+
+
+# Load Environment Variables 
+load_dotenv()
 
 
 # Base Path Configuration
@@ -56,8 +63,12 @@ TEMPLATES = [
 # Database Configuration
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('DATABASE_NAME'),
+        'USER':  os.environ.get('DATABASE_USER'),
+        'PASSWORD': os.environ.get('DATABASE_PASSWORD'),
+        'HOST': os.environ.get('DATABASE_HOST'),
+        'PORT': os.environ.get('DATABASE_PORT'),
     }
 }
 
@@ -84,7 +95,7 @@ ROOT_URLCONF = 'studybuddy.urls'
 WSGI_APPLICATION = 'studybuddy.wsgi.application'
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
-SECRET_KEY = 'djangoSecretKey!@#$%ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'base.User'
 ALLOWED_HOSTS = ['*']
@@ -99,9 +110,9 @@ USE_TZ = True
 
 # Cloudinary Configuration
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'nitzancloudinary',
-    'API_KEY': '436212558586133',
-    'API_SECRET': '8BEQryublSXL1P_bpHL61UWOWeg',
+    'CLOUD_NAME': os.environ.get('CLOUDINARY_CLOUD_NAME'),
+    'API_KEY': os.environ.get('CLOUDINARY_API_KEY'),
+    'API_SECRET': os.environ.get('CLOUDINARY_API_SECRET'),
 }
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
