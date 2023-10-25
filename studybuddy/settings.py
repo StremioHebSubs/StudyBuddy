@@ -63,7 +63,7 @@ TEMPLATES = [
 # Database Configuration
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': os.environ.get('DATABASE_NAME'),
         'USER':  os.environ.get('DATABASE_USER'),
         'PASSWORD': os.environ.get('DATABASE_PASSWORD'),
@@ -92,13 +92,13 @@ STATICFILES_DIRS = [BASE_DIR / 'static']
 
 # Sensitive Configuartion
 ROOT_URLCONF = 'studybuddy.urls'
-WSGI_APPLICATION = 'studybuddy.wsgi.application'
+WSGI_APPLICATION = 'studybuddy.wsgi.app'
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 SECRET_KEY = os.environ.get('SECRET_KEY')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'base.User'
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*', '.vercel.app']
 
 
 # Time Zone Configuration
