@@ -22,9 +22,10 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run Database Migrations
-        run: python manage.py makemigrations base
-        run: python manage.py makemigrations
-        run: python manage.py migrate
+        run: |
+          python manage.py makemigrations base
+          python manage.py makemigrations
+          python manage.py migrate
 
       - name: Run Static Files Collection
         run: python manage.py collectstatic
