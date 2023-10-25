@@ -1,0 +1,36 @@
+name: StudyBuddy CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  cicd-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Set up Python3
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.11
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Database Migrations
+        run: python manage.py makemigrations base
+        run: python manage.py makemigrations
+        run: python manage.py migrate
+
+      - name: Run Static Files Collection
+        run: python manage.py collectstatic
+
+      - name: Run Linter
+        run: pylint StudyBuddy
+
+      - name: Deploy Service
+        run: curl "https://api.vercel.com/v1/integrations/deploy/prj_ibtGj3zSE6z6VqtALZ5Xj4Sq3jYY/${{ secrets.VERCEL_API_KEY }}"
