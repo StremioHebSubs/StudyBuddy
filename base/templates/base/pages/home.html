@@ -1,0 +1,46 @@
+{% extends 'boilerplate.html' %}
+{% block content %}
+  <main class="layout layout--3">
+    <div class="container">
+      {% include 'base/components/topic.html' %}
+
+      <div class="roomList">
+        <div class="mobile-menu">
+          <form method="GET" action="" class="header__search">
+            <label>
+              {% include 'base/icons/search.html' %}
+              
+              <input name="query" placeholder="Search for posts" />
+            </label>
+          </form>
+        
+          <div class="mobile-menuItems">
+            {% include 'base/components/topic/mobile.html' %}
+      
+            {% include 'base/components/activity/mobile.html' %}
+          </div>
+        </div>
+
+        <div class="roomList__header">
+          <div>
+            <h2>Study Room</h2>
+            
+            <p>
+              {{ rooms.all.count }}
+            </p>
+          </div>
+
+          <a class="btn btn--main" href="{% url 'room-registration' %}">
+            {% include 'base/icons/plus.html' %}
+            
+            <h3>Create Room</h3>
+          </a>
+        </div>
+
+        {% include 'base/components/feed.html' %}
+      </div>
+    
+      {% include 'base/components/activity.html' %}
+    </div>
+  </main>
+{% endblock content %}
