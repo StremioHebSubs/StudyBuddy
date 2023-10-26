@@ -1,0 +1,34 @@
+{% extends 'boilerplate.html' %} 
+{% block content %}
+  <main class="auth layout">
+    <div class="container">
+      <div class="layout__box">
+        <div class="layout__boxHeader">
+          <div class="layout__boxTitle">
+            <a href="{{ request.META.HTTP_REFERER }}">
+              {% include 'base/icons/left_arrow.html' %}
+            </a>
+            
+            <h3>Registeration</h3>
+          </div>
+        </div>
+
+        <div class="layout__body">
+          <h2 class="auth__tagline">Find Your Study Partner!</h2>
+
+          {% include 'base/forms/form.html' %}
+        
+          <div class="auth__action">
+            <p>
+              Already have an account ?
+            </p>
+            
+            <a href="{% url 'user-login' %}" class="btn btn--link">
+              Login
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+{% endblock content %}
