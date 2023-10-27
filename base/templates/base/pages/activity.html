@@ -1,0 +1,20 @@
+{% extends 'boilerplate.html' %}
+{% block content %}
+  <main class="layout">
+    <div class="container">
+      <div class="layout__box">
+        <div class="layout__boxHeader">
+          <div class="layout__boxTitle">
+            <a href="{{ request.META.HTTP_REFERER }}">
+              {% include 'base/icons/left_arrow.html' %}
+            </a>
+          
+            <h3>Recent Activities</h3>
+          </div>
+        </div>
+
+        {% include 'base/components/activity/messages.html' %}
+      </div>
+    </div>
+  </main>
+{% endblock content %}
