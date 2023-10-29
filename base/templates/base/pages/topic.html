@@ -1,0 +1,44 @@
+{% extends 'boilerplate.html' %}
+{% block content %}
+  <main class="create-room layout">
+    <div class="container">
+      <div class="layout__box">
+        <div class="layout__boxHeader">
+          <div class="layout__boxTitle">
+            <a href="{{ request.META.HTTP_REFERER }}">
+              {% include 'base/icons/left_arrow.html' %}
+            </a>
+            
+            <h3>Browse Topics</h3>
+          </div>
+        </div>
+
+        <div class="topics-page layout__body">
+          <form method="GET" action="{% url 'home' %}" class="header__search">
+            <label>
+              {% include 'base/icons/search.html' %}
+              
+              <input name="query" placeholder="Search for posts" />
+            </label>
+          </form>
+
+          <ul class="topics__list">
+            <li>
+              <a href="{% url 'home' %}">
+                All<span>{{ roomCounter }}</span>
+              </a>
+            </li>
+          
+            {% for topic in topics %}
+              <li>
+                <a href="{% url 'home' %}?query={{ topic.name }}">
+                  {{ topic.name }}<span>{{ topic.room_set.all.count }}</span>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+{% endblock content %}
