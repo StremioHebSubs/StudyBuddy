@@ -1,0 +1,40 @@
+{% extends 'boilerplate.html' %}
+{% block content %}
+  <main class="profile-page layout layout--2">
+    <div class="container">
+      <div class="room">
+        <div class="room__top">
+          <div class="room__topLeft">
+            <a href="{{ request.META.HTTP_REFERER }}">
+              {% include 'base/icons/left_arrow.html' %}
+            </a>
+            
+            <h3>Study Room</h3>
+          </div>
+          
+          {% include 'base/components/room/header.html' %}
+        </div>
+
+        <div class="room__box scroll">
+          {% include 'base/components/room/information.html' %}
+        
+          {% include 'base/components/room/messages.html' %}
+        </div>
+      
+        
+        <div class="room__message">
+          {% if request.user.is_authenticated %}
+            <form method="POST" action="">
+              {% csrf_token %}
+
+              <input name="body" placeholder="Write your message here" />
+            </form>
+          {% endif %}
+        </div>
+      </div>
+      
+      
+      {% include 'base/components/room/participants.html' %}
+    </div>
+  </main>
+{% endblock content %}
