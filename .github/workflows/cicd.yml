@@ -16,21 +16,15 @@ jobs:
       - name: Set up Python3
         uses: actions/setup-python@v2
         with:
-          python-version: 3.11
+          python-version: 3.11.4
 
       - name: Install Dependencies
         run: pip install -r requirements.txt
 
-      - name: Run Database Migrations
-        run: |
-          python manage.py makemigrations base
-          python manage.py makemigrations
-          python manage.py migrate
-
-      - name: Run Static Files Collection
+      - name: Initialize Static Files
         run: python manage.py collectstatic
 
-      - name: Run Linter
+      - name: Linter Verification
         run: pylint StudyBuddy
 
       - name: Deploy Service
