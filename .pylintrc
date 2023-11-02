@@ -1,0 +1,11 @@
+[MAIN]
+extension-pkg-whitelist=django
+
+[TYPECHECK]
+generated-members=REQUEST, object, DoesNotExist
+
+[MISCELLANEOUS]
+init-import=no
+
+[MESSAGES CONTROL]
+disable=missing-docstring, trailing-whitespace, invalid-name
