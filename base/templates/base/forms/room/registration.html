@@ -1,0 +1,22 @@
+{% extends 'boilerplate.html' %} 
+{% block content %}
+  <main class="create-room layout">
+    <div class="container">
+      <div class="layout__box">
+        <div class="layout__boxHeader">
+          <div class="layout__boxTitle">
+            <a href="{{ request.META.HTTP_REFERER }}">
+              {% include 'base/icons/left_arrow.html' %}
+            </a>
+            
+            <h3>Create Study Room</h3>
+          </div>
+        </div>
+
+        <div class="layout__body">
+          {% include 'base/forms/form.html' %}
+        </div>
+      </div>
+    </div>
+  </main>
+{% endblock content %}
