@@ -18,14 +18,14 @@ jobs:
         with:
           python-version: 3.11.4
 
-      - name: Install Dependencies
+      - name: Dependencies Installation
         run: pip install -r requirements.txt
 
-      - name: Initialize Static Files
+      - name: Static Files Creation
         run: python manage.py collectstatic
 
       - name: Linter Verification
-        run: pylint StudyBuddy
+        run: pylint --rcfile StudyBuddy/.pylintrc StudyBuddy
 
-      - name: Deploy Service
+      - name: Service Deployment
         run: curl "https://api.vercel.com/v1/integrations/deploy/prj_ibtGj3zSE6z6VqtALZ5Xj4Sq3jYY/${{ secrets.VERCEL_API_KEY }}"
