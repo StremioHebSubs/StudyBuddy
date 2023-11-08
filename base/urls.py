@@ -1,3 +1,14 @@
+"""
+StudyBuddy Base URL Configuration
+
+This module defines the URL patterns for the StudyBuddy Django project.
+It maps specific URLs to corresponding views and provides named URLs for easy reference.
+
+The URLs defined here determine how different parts of the StudyBuddy application can be accessed via the web.
+
+For more information on Django URL routing, refer to the Django documentation:
+https://docs.djangoproject.com/en/stable/topics/http/urls/
+"""
 from django.urls import path
 
 from . import views
