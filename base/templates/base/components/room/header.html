@@ -1,0 +1,11 @@
+{% if room.host == request.user %}
+  <div class="room__topRight">
+    <a href="{% url 'room-update' room.id %}">
+      {% include 'base/icons/edit.html' %}
+    </a>
+
+    <a href="{% url 'room-delete' room.id %}">
+      {% include 'base/icons/x.html' %}
+    </a>
+  </div>
+{% endif %}
