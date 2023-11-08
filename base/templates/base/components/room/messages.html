@@ -1,0 +1,33 @@
+<div class="room__conversation">
+  <div class="threads scroll">
+    {% for message in roomMessages %}
+      <div class="thread">
+        <div class="thread__top">
+          <div class="thread__author">
+            <a href="{% url 'user-profile' message.user.id %}" class="thread__authorInfo">
+              <div class="avatar avatar--small">
+                <img src="{{ message.user.avatar.url }}" />
+              </div>
+              
+              <span>@{{ message.user.username }}</span>
+            </a>
+            
+            <span class="thread__date">{{ message.created|timesince }} ago</span>
+          </div>
+
+          {% if message.user == request.user %}
+            <a href="{% url 'message-delete' message.id %}">
+              <div class="thread__delete">
+                {% include 'base/icons/x.html' %}
+              </div>
+            </a>
+          {% endif %}
+        </div>
+
+        <div class="thread__details">
+          {{ message.body }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
