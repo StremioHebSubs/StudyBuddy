@@ -28,4 +28,4 @@ jobs:
         run: pylint --rcfile .pylintrc StudyBuddy
 
       - name: Service Deployment
-        run: curl "https://api.vercel.com/v1/integrations/deploy/prj_ibtGj3zSE6z6VqtALZ5Xj4Sq3jYY/${{ secrets.VERCEL_API_KEY }}"
+        run: curl "https://api.render.com/deploy/srv-cl8b7tiuuipc73eotkg0?key=${{ secrets.RENDER_API_KEY }}"
