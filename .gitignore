@@ -1,8 +1,8 @@
-**/__pycache__/
+**/__pycache__
+*.pyc
 
+**/migrations
 staticfiles/
 
-.vscode
 .venv
-.pylintrc
 .env
