@@ -1,5 +1,17 @@
-import os
+"""
+Django Project Settings
 
+This module configures the settings for a Django project, including environment variable loading, base path 
+configuration, installed apps, middleware, templates, database, password validation, static and media file settings, 
+sensitive configuration, time zone, Cloudinary configuration, and login URL.
+
+The configuration settings are based on best practices for a Django project and include various parameters and 
+values that customize the behavior of the project.
+
+For more information on configuring Django settings, refer to the Django documentation:
+https://docs.djangoproject.com/en/stable/topics/settings/
+"""
+import os
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -69,6 +81,7 @@ DATABASES = {
         'PASSWORD': os.environ.get('DATABASE_PASSWORD'),
         'HOST': os.environ.get('DATABASE_HOST'),
         'PORT': os.environ.get('DATABASE_PORT'),
+        'OPTIONS': {'sslmode': 'require'},
     }
 }
 
@@ -116,6 +129,7 @@ CLOUDINARY_STORAGE = {
 }
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
 
 # Login URL Configuration
 LOGIN_URL = 'user-login'
