@@ -133,5 +133,3 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # Login URL Configuration
 LOGIN_URL = 'user-login'
-
-DEBUG=True
