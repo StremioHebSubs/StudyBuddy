@@ -10,6 +10,6 @@ python manage.py collectstatic
 
 
 # Database Migration
-python makemigrations base
-python makemigrations
+python manage.py makemigrations base
+python manage.py makemigrations
 python manage.py migrate
