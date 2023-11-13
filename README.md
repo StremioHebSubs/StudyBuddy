@@ -15,7 +15,6 @@
    <li>JavaScript</li>
    <li>PostgreSQL</li>
    <li>Cloudinary</li>
-   <li>Vercel</li>
 </ul>
 
 <h2>Getting Started</h2>
