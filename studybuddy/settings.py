@@ -111,7 +111,7 @@ CSRF_COOKIE_SECURE = True
 SECRET_KEY = os.environ.get('SECRET_KEY')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'base.User'
-ALLOWED_HOSTS = ['*', '.vercel.app']
+ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',')
 
 
 # Time Zone Configuration
