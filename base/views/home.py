@@ -18,7 +18,7 @@ def home(request) -> render:
     topics = Topic.objects.all()[0:5]
 
     roomQuery = request.GET.get('query', '')
-    roomMessages = Message.objects.filter(room__topic__name__icontains=roomQuery)
+    roomMessages = Message.objects.filter(room__topic__name__icontains=roomQuery)[0:5]
     roomCounter = Room.objects.filter(topic__name__icontains=roomQuery).count()
     matchedRooms = Room.objects.filter(
         Q(name__icontains=roomQuery) |
