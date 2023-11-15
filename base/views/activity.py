@@ -13,7 +13,7 @@ from base.models import Message
 
 
 def activity(request) -> render:
-    roomMessages = Message.objects.all()
+    roomMessages = Message.objects.all()[0:5]
 
     context = {'roomMessages': roomMessages}
     return render(request, 'base/pages/activity.html', context)
