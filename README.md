@@ -101,3 +101,250 @@
    <li>Open a pull request and provide a clear and detailed explanation of your changes and the reasoning behind them.</li>
    <li>Be prepared to answer questions and address any issues or feedback on your pull request.</li>
 </ul>
+
+<h2>StudyBuddy "<b>Mobile</b>" Preview</h2>
+<div>
+  <div>
+    <h3>Home Page</h3>
+    <p>
+      Serve as the mobile version landing page.<br />
+      Present you the existed study room that ready for exploration on the platform.
+    </p>
+      <img src="https://github.com/Nitzantomer1998/ProjectsRepresentation/blob/main/StudyBuddy/HomeMobilePage.jpg" alt=" " />
+  </div>
+   
+  <br />
+   
+  <div>
+    <h3>Room Creation Page</h3>
+    <p>
+      Serve as the mobile version room creation page.<br />
+      Present you with a study room creation form.
+    </p>
+    <img src="https://github.com/Nitzantomer1998/ProjectsRepresentation/blob/main/StudyBuddy/RoomCreationMobilePage.jpg" alt="" />
+  </div>
+   
+  <br />
+   
+  <div>
+    <h3>Room View Page</h3>
+    <p>
+      Serve as the mobile version room view page.<br />
+      Present you with a study room information and conversation.
+    </p>
+    <img src="https://github.com/Nitzantomer1998/ProjectsRepresentation/blob/main/StudyBuddy/RoomViewMobilePage.jpg" alt="" />
+  </div>
+   
+  <br />
+  
+  <div>
+    <h3>Edit Room Page</h3>
+    <p>
+      Serve as the mobile version room edit page.<br />
+      Present you with your study room information filled in a form which you can edit.
+    </p>
+    <img src="https://github.com/Nitzantomer1998/ProjectsRepresentation/blob/main/StudyBuddy/RoomEditMobilePage.jpg" alt="" />
+  </div>
+   
+  <br />
+
+  <div>
+    <h3>Delete Room Page</h3>
+      Serve as the mobile version room delete page.<br />
+      Present you with delete confirmation message. 
+    </p>
+    <img src="https://github.com/Nitzantomer1998/ProjectsRepresentation/blob/main/StudyBuddy/RoomDeletionMobilePage.jpg" alt="" />
+  </div>
+   
+  <br />
+  
+  <div>
+    <h3>Topics View Page</h3>
+    <p>
+      Serve as the mobile version topics view page.<br />
+      Present you with all the existing study room topics. 
+    </p>
+    <img src="https://github.com/Nitzantomer1998/ProjectsRepresentation/blob/main/StudyBuddy/TopicsMobilePage.jpg" alt="" />
+  </div>
+   
+  <br />
+
+  <div>
+    <h3>Activities View Page</h3>
+    <p>
+      Serve as the mobile version activities view page.<br />
+      Present you with the 5 most recent activities on the platform. 
+    </p>
+    <img src="https://github.com/Nitzantomer1998/ProjectsRepresentation/blob/main/StudyBuddy/ActivityMobilePage.jpg" alt="" />
+  </div>
+   
+  <br />
+   
+  <div>
+    <h3>Profile Center Page</h3>
+    <p>
+      Serve as the mobile version profile center page.<br />
+      Present you with your information and related activities such as rooms and more. 
+    </p>
+    <img src="https://github.com/Nitzantomer1998/ProjectsRepresentation/blob/main/StudyBuddy/ProfileCenterMobilePage.jpg" alt="" />
+  </div>
+
+  <br />
+   
+  <div>
+    <h3>Edit Profile Page</h3>
+    <p>
+      Serve as the mobile version profile edit page.<br />
+      Present you with your information filled in a form which allow you to edit it. 
+    </p>
+    <img src="https://github.com/Nitzantomer1998/ProjectsRepresentation/blob/main/StudyBuddy/ProfileCenterEditingMobilePage.jpg" alt="" />
+  </div>
+</div>
+
+<br />
+
+<div>
+    <h3>Sign In Page</h3>
+    <p>
+      Serve as the mobile version sign in page.<br />
+      Present you with a login form. 
+    </p>
+    <img src="https://github.com/Nitzantomer1998/ProjectsRepresentation/blob/main/StudyBuddy/SignInMobilePage.jpg" alt="" />
+  </div>
+
+  <br />
+   
+  <div>
+    <h3>Sign Up Page</h3>
+    <p>
+      Serve as the mobile version sign un page.<br />
+      Present you with a register form. 
+    </p>
+    <img src="https://github.com/Nitzantomer1998/ProjectsRepresentation/blob/main/StudyBuddy/SignUpMobilePage.jpg" alt="" />
+  </div>
+</div>
+
+<br />
+
+<h2>StudyBuddy "<b>PC</b>" Preview</h2>
+<div>
+  <div>
+    <h3>Home Page</h3>
+    <p>
+      Serve as the PC version landing page.<br />
+      Present you the existed study room that ready for exploration on the platform.
+    </p>
+      <img src="https://github.com/Nitzantomer1998/ProjectsRepresentation/blob/main/StudyBuddy/HomePCPage.jpg" alt=" " />
+  </div>
+   
+  <br />
+   
+  <div>
+    <h3>Room Creation Page</h3>
+    <p>
+      Serve as the PC version room creation page.<br />
+      Present you with a study room creation form.
+    </p>
+    <img src="https://github.com/Nitzantomer1998/ProjectsRepresentation/blob/main/StudyBuddy/RoomCreationPCPage.jpg" alt="" />
+  </div>
+   
+  <br />
+   
+  <div>
+    <h3>Room View Page</h3>
+    <p>
+      Serve as the PC version room view page.<br />
+      Present you with a study room information and conversation.
+    </p>
+    <img src="https://github.com/Nitzantomer1998/ProjectsRepresentation/blob/main/StudyBuddy/RoomViewPCPage.jpg" alt="" />
+  </div>
+   
+  <br />
+  
+  <div>
+    <h3>Edit Room Page</h3>
+    <p>
+      Serve as the PC version room edit page.<br />
+      Present you with your study room information filled in a form which you can edit.
+    </p>
+    <img src="https://github.com/Nitzantomer1998/ProjectsRepresentation/blob/main/StudyBuddy/RoomEditPCPage.jpg" alt="" />
+  </div>
+   
+  <br />
+
+  <div>
+    <h3>Delete Room Page</h3>
+      Serve as the PC version room delete page.<br />
+      Present you with delete confirmation message. 
+    </p>
+    <img src="https://github.com/Nitzantomer1998/ProjectsRepresentation/blob/main/StudyBuddy/RoomDeletionPCPage.jpg" alt="" />
+  </div>
+   
+  <br />
+  
+  <div>
+    <h3>Topics View Page</h3>
+    <p>
+      Serve as the PC version topics view page.<br />
+      Present you with all the existing study room topics. 
+    </p>
+    <img src="https://github.com/Nitzantomer1998/ProjectsRepresentation/blob/main/StudyBuddy/TopicsPCPage.jpg" alt="" />
+  </div>
+   
+  <br />
+
+  <div>
+    <h3>Activities View Page</h3>
+    <p>
+      Serve as the PC version activities view page.<br />
+      Present you with the 5 most recent activities on the platform. 
+    </p>
+    <img src="https://github.com/Nitzantomer1998/ProjectsRepresentation/blob/main/StudyBuddy/ActivityPCPage.jpg" alt="" />
+  </div>
+   
+  <br />
+   
+  <div>
+    <h3>Profile Center Page</h3>
+    <p>
+      Serve as the PC version profile center page.<br />
+      Present you with your information and related activities such as rooms and more. 
+    </p>
+    <img src="https://github.com/Nitzantomer1998/ProjectsRepresentation/blob/main/StudyBuddy/ProfileCenterPCPage.jpg" alt="" />
+  </div>
+
+  <br />
+   
+  <div>
+    <h3>Edit Profile Page</h3>
+    <p>
+      Serve as the PC version profile edit page.<br />
+      Present you with your information filled in a form which allow you to edit it. 
+    </p>
+    <img src="https://github.com/Nitzantomer1998/ProjectsRepresentation/blob/main/StudyBuddy/ProfileCenterEditingPCPage.jpg" alt="" />
+  </div>
+</div>
+
+<br />
+
+<div>
+    <h3>Sign In Page</h3>
+    <p>
+      Serve as the PC version sign in page.<br />
+      Present you with a login form. 
+    </p>
+    <img src="https://github.com/Nitzantomer1998/ProjectsRepresentation/blob/main/StudyBuddy/SignInPCPage.jpg" alt="" />
+  </div>
+
+  <br />
+   
+  <div>
+    <h3>Sign Up Page</h3>
+    <p>
+      Serve as the PC version sign un page.<br />
+      Present you with a register form. 
+    </p>
+    <img src="https://github.com/Nitzantomer1998/ProjectsRepresentation/blob/main/StudyBuddy/SignUpPCPage.jpg" alt="" />
+  </div>
+</div>
+
