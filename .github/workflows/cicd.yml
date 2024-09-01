@@ -26,6 +26,3 @@ jobs:
 
       - name: Linter Verification
         run: pylint --rcfile .pylintrc StudyBuddy
-
-      - name: Service Deployment
-        run: curl "https://api.render.com/deploy/srv-cl8b7tiuuipc73eotkg0?key=${{ secrets.RENDER_API_KEY }}"
